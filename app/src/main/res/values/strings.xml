@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Collabasket</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="t_l_phone">Téléphone</string>
+    <string name="connexion">Connexion</string>
+    <string name="connexion2">Connexion</string>
+    <string name="pas_encore_inscrit_s_inscrire"><u>Pas encore inscrit ? Inscription</u></string>
+
 </resources>
