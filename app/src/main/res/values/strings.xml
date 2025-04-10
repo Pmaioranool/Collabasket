@@ -5,5 +5,9 @@
     <string name="connexion">Connexion</string>
     <string name="connexion2">Connexion</string>
     <string name="pas_encore_inscrit_s_inscrire"><u>Pas encore inscrit ? Inscription</u></string>
+    <string name="enregistrement">Enregistrement</string>
+    <string name="s_enregistrer">S\'enregistrer</string>
+    <string name="d_ja_inscrit_se_connecter"><u>Déja inscrit? Se connecter</u></string>
+    <string name="mail">Mail</string>
 
 </resources>
