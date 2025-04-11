@@ -25,21 +25,29 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Navigation pour le Bottom Navigation View
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         bottomNav.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.nav_list:
+                case R.id.nav_list:  // Assure-toi que c'est bien le bon ID
                     startActivity(new Intent(this, ListActivity.class));
                     return true;
-                case R.id.nav_inventory:
+                case R.id.nav_inventory:  // Idem ici
                     startActivity(new Intent(this, InventoryActivity.class));
                     return true;
-                case R.id.nav_group:
-                    startActivity(new Intent(this, GroupActivity.class));
+                case R.id.nav_connexion:  // Assure-toi que c'est bien le bon ID
+                    startActivity(new Intent(this, MainActivity.class));  // Redirection vers la page de connexion
                     return true;
                 default:
                     return false;
             }
+        });
+
+
+        // Logique pour le bouton "S'inscrire"
+        findViewById(R.id.button3).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
     }
 }
